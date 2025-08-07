@@ -5,7 +5,7 @@ metadata:
   labels:
     app: bank
 spec:
-  replicas: 5
+  replicas: 8
   selector:
     matchLabels:
       app: bank
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cont1
-        image: saikumarg738/mb-image:latest
+        image: saikumarg738/loans:latest
 ---
 apiVersion: v1
 kind: Service
